@@ -1,0 +1,26 @@
+[package]
+name = "passman"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "pm"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+aes-gcm = "0.10.3"
+argon2 = "0.5"
+rand = "0.9"
+rpassword = "7"
+arboard = "3"
+zeroize = { version = "1.8", features = ["derive"] }
+thiserror = "2"
+anyhow = "1"
+dirs = "6"
+uuid = { version = "1", features = ["v4"] }
+
+[dev-dependencies]
+tempfile = "3"
